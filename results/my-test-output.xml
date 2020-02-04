@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.051" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2020-02-04T15:02:54" tests="0" file="cypress/integration/App.e2e.js" failures="0" time="0">
+  </testsuite>
+  <testsuite name="App E2E" timestamp="2020-02-04T15:02:54" tests="1" failures="0" time="0.051">
+    <testcase name="App E2E should assert that true is equal to true" time="0.051" classname="should assert that true is equal to true">
+    </testcase>
+  </testsuite>
+</testsuites>
