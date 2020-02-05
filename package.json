@@ -19,6 +19,7 @@
     "test:unit:watch": "npm run test:unit -- --watch",
     "test:snapshot": "jest --config ./test/jest.config.json",
     "test:snapshot:watch": "npm run test:snapshot -- --watch",
+    "cypress:open": "cypress open",
     "test:cypress": "start-server-and-test start http://localhost:3000 cypress",
     "cypress": "cypress run"
   },

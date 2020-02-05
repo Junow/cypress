@@ -1,8 +1,20 @@
-describe('App E2E', () => {
-  it('헤더가 있어야 한다', () => {
-    cy.visit('/');
+/* eslint-disable no-undef */
+/// <reference types="Cypress" />
 
-    cy.get('h1')
-      .should('have.text', 'My Counter');
-  });
-});
+describe('My First Test', function() {
+  it('Visits the Kitchen Sink', function() {
+    cy.visit('http://localhost:3000');
+    cy.contains('Counter').click();
+    cy.url().should('include', '/#1');
+
+    cy.get('.id')
+      .type('taristmas@gmail.com') // 입력
+      .should('have.value', 'taristmas@gmail.com'); 
+
+    cy.get('#button').click(); // 클릭
+
+    cy.get('#val').invoke('text').should('eq', '1'); // innerHtml 뽑기?
+      
+      
+  })
+})  
