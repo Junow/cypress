@@ -1,8 +1,8 @@
 /* eslint-disable no-undef */
-/// <reference types="Cypress" />
+/// <reference types="Cypress" /
 
 describe('My First Test', function() {
-  it('Visits the Kitchen Sink', function() {
+  it('test', function() {
     cy.visit('http://localhost:3000');
     cy.contains('Counter').click();
     cy.url().should('include', '/#1');
