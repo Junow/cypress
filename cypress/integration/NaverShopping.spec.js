@@ -14,12 +14,6 @@ describe('네이버쇼핑', function() {
       
       cy.get('@searchButton')
         .click()
-
-
-
-      cy.url()
-        .should('eq', 'https://search.shopping.naver.com/search/all.nhn?query=%EC%BD%94%EB%A1%9C%EB%82%98&cat_id=&frm=NVSHATC')
-
       
 
       cy.screenshot(`${this.title}`)
