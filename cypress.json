@@ -1,5 +1,11 @@
 {
   "video": true,
   "baseUrl": "http://localhost:3000",
-  "reporter": "reporters/custom.js"
+  "reporterEnabled": "mochawesome",
+  "mochawesomeReporterOptions": {
+    "reportDir": "cypress/reports/mochawesome",
+    "overwrite": false,
+    "html": false,
+    "json": true
+  }
 }

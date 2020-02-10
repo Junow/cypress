@@ -14,7 +14,7 @@ describe('My First Test', function() {
     cy.get('#button').click(); // 클릭
 
     cy.get('#val').invoke('text').should('eq', '1'); // innerHtml 뽑기?
-      
+    cy.screenshot(`${Date.now()}`)
       
   })
 })  

@@ -21,7 +21,7 @@
     "test:snapshot:watch": "npm run test:snapshot -- --watch",
     "cypress:open": "cypress open",
     "test:cypress": "start-server-and-test start http://localhost:3000 cypress",
-    "cypress": "cypress run --reporter reporters/custom.js"
+    "cypress": "./node_modules/.bin/cypress run"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,6 +40,8 @@
   },
   "devDependencies": {
     "cypress": "^3.8.3",
+    "mocha": "^7.0.1",
+    "mochawesome": "^4.1.0",
     "start-server-and-test": "^1.10.8"
   }
 }
