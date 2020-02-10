@@ -4,12 +4,13 @@
 describe('네이버쇼핑', function() {
     it('네이버쇼핑 - "코로나" 검색', function() {
       cy.visit('https://shopping.naver.com/home/p/index.nhn')
-      cy.get('[_clickcode="search"]').as('searchButton')
+      cy.get('[_clickcode="search"]').as('searchButton') // 검색 버튼
 
+      // 쿼리
       cy.get('#autocompleteWrapper > input')
         .first()
         .type('코로나')
-
+      
       cy.get('@searchButton')
         .click()
 
