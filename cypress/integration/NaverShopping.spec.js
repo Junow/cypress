@@ -22,8 +22,7 @@ describe('네이버쇼핑', function() {
 
     it('search result', () => {
       cy.visit('https://search.shopping.naver.com/search/all.nhn?query=%EC%BD%94%EB%A1%9C%EB%82%98&cat_id=&frm=NVSHATC')
-      cy.url()
-        .should('eq', 'https://search.shopping.naver.com/search/all.nhn?query=%EC%BD%94%EB%A1%9C%EB%82%98&cat_id=&frm=NVSHATC')
+     
       cy.get('#_priceApplyButton').as('priceSearchButton') // 가격 검색 버튼
 
         cy.get('#_queryExplain > em')
